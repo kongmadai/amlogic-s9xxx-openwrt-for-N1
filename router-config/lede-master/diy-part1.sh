@@ -16,3 +16,22 @@
 # other
 # rm -rf package/lean/{samba4,luci-app-samba4,luci-app-ttyd}
 
+########additional 
+
+
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# Add luci-theme-argon
+rm -rf ../lean/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+
+#添加smartdns
+#git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
+git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+
+git clone -b luci2 https://github.com/kuoruan/luci-app-v2ray.git luci-app-v2ray
+
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
