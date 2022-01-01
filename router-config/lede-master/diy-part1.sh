@@ -32,6 +32,6 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
-#git clone -b luci2 https://github.com/kuoruan/luci-app-v2ray.git luci-app-v2ray
+git clone -b luci2 https://github.com/kuoruan/luci-app-v2ray.git luci-app-v2ray
 
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
